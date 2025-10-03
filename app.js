@@ -1,7 +1,7 @@
 const express =require("express")
 require("./src/database/connection")
 const allRoutes=require("./src/routes/route.js")
-const cors = require("cors");
+var cors = require("cors");
 
 
 const PORT = process.env.PORT || 3000;
