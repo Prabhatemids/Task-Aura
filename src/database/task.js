@@ -29,13 +29,9 @@ const TaskSchema =mongoose.Schema({
     }],
     createdby:{
         type:String
-    },
-    timestamps: {
-    createdAt: 'createdat',
-    updatedAt: 'updatedat'
-  }
+    }
 
-})
+},{ timestamps: true });
 
 const TaskModel = mongoose.model("Tasks",TaskSchema)
 module.exports=TaskModel
