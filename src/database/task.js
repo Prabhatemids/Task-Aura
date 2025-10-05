@@ -30,12 +30,10 @@ const TaskSchema =mongoose.Schema({
     createdby:{
         type:String
     },
-    createdat:{
-        type:Date    
-    },
-    updatedat:{
-        type:Date
-    },
+    timestamps: {
+    createdAt: 'createdat',
+    updatedAt: 'updatedat'
+  }
 
 })
 
